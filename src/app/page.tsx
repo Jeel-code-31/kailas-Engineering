@@ -219,7 +219,7 @@ export default function Home() {
               {/* Floating Badge */}
               <div className="absolute -bottom-12 -left-12 bg-secondary p-12 rounded-[2.5rem] shadow-2xl border border-gray-200 hidden md:block">
                 <div className="flex items-center gap-6">
-                  <img src="/bees.png" alt="Logo" className="w-24 h-24" />
+                  <img src="/Bees.png" alt="Logo" className="w-24 h-24" />
                   <div className="flex flex-col uppercase font-black text-[24px] font-heading">
                     <span className="text-primary">+ Years of Design & Manufacture The Machinery</span>
                   </div>

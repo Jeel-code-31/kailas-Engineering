@@ -57,7 +57,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
         {/* Logo Branding */}
         <Link href="/" className="flex items-center gap-4 group">
-          <Image src="/logo.png" alt="Logo" width={150} height={48} className="h-10 sm:h-12 w-auto object-contain" />
+          <Image src="/Logo.png" alt="Logo" width={150} height={48} className="h-10 sm:h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
