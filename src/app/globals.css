@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A;
+  /* Deep Navy */
+  --color-secondary: #FDFCF0;
+  /* Light Cream BG */
+  --color-accent: #F97316;
+  /* Industrial Orange */
+  --color-muted: #64748B;
+  /* Slate for secondary text */
+
+  --font-heading: var(--font-amaranth), sans-serif;
+  --font-body: var(--font-abeezee), sans-serif;
+}
+
+@layer base {
+
+  html,
+  body {
+    @apply font-body bg-[#FDFCF0] text-[#0F172A] min-h-full flex flex-col antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
