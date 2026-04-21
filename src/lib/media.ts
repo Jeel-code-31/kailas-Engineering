@@ -16,7 +16,7 @@ export type MediaItem = {
 export const mediaData: MediaItem[] = [
   {
     slug: "anuga-food-tech-exhibition",
-    src: "/event/Anuga.jpg",
+    src: "/Event/Anuga.jpg",
     title: "Anuga Food Tech Exhibition-20th to 22nd August 2025",
     category: "Event-1",
     date: "22-08-2025",
@@ -44,7 +44,7 @@ export const mediaData: MediaItem[] = [
   },
   {
     slug: "csir-cftro-food-enterprise-conclave",
-    src: "/event/Green.jpg",
+    src: "/Event/Green.jpg",
     title: "CSIR-CFTRO Food Enterprise Conclave 2025-15th july 2025",
     category: "Event-2",
     date: "15th-07-2025",
@@ -59,7 +59,7 @@ export const mediaData: MediaItem[] = [
   },
   {
     slug: "blood-donation-camp",
-    src: "/event/Blood.jpg",
+    src: "/Event/Blood.jpg",
     title: "Blood Donation Camp",
     category: "Culture",
     date: "09-07-2025",
@@ -83,7 +83,7 @@ export const mediaData: MediaItem[] = [
   },
   {
     slug: "green-cold-chan-convlave",
-    src: "/event/Grun.png",
+    src: "/Event/Grun.png",
     title: "Green Cold Chan Convlave",
     category: "Culture",
     date: "29-06-2025",
@@ -99,7 +99,7 @@ export const mediaData: MediaItem[] = [
   },
   {
     slug: "international-yoga-day",
-    src: "/event/Yoga.jpg",
+    src: "/Event/Yoga.jpg",
     title: "International Yoga Day",
     category: "Culture",
     date: "28-05-2025",

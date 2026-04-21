@@ -14,7 +14,7 @@ export default function ServicesPage() {
       focus: "Integrated Workflow & Modern Space"
     },
     { 
-      img: "/Service/Two.jpg", 
+      img: "/Service/two.jpg", 
       title: "Manufacturing Unit-2", 
       details: "High-precision laser cutting capabilities for complex shapes and materials.",
       machines: ["CNC laser cutting machine", "Highly versatile cutting"],
