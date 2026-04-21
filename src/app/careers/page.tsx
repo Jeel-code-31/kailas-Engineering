@@ -107,7 +107,7 @@ export default function CareersPage() {
           <motion.div
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 10, ease: "linear" }}
+            transition={{ duration: 10, ease: "linear" as const }}
             className="relative w-full h-full"
           >
             <img
@@ -281,7 +281,7 @@ export default function CareersPage() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.3, ease: "easeOut" as const }}
               className="relative w-full max-w-2xl bg-white rounded-[2.5rem] shadow-2xl overflow-hidden z-10 my-auto"
             >
               {/* Modal Header */}

@@ -100,19 +100,19 @@ export default function ServicesPage() {
   const iconVariants = {
     default: {
       rest: { scale: 1, y: 0 },
-      hover: { scale: 1.15, y: -5, transition: { duration: 0.4, ease: "easeOut" } }
+      hover: { scale: 1.15, y: -5, transition: { duration: 0.4, ease: "easeOut" as const } }
     },
     machining: {
       rest: { scale: 1, rotate: 0 },
-      hover: { scale: 1.2, rotate: 360, transition: { duration: 1.2, ease: "linear", repeat: Infinity } }
+      hover: { scale: 1.2, rotate: 360, transition: { duration: 1.2, ease: "linear" as const, repeat: Infinity } }
     },
     fabrication: {
       rest: { scale: 1, rotate: 0 },
-      hover: { scale: 1.15, rotate: [-15, 10, 0], transition: { duration: 0.6, ease: "easeInOut" } }
+      hover: { scale: 1.15, rotate: [-15, 10, 0], transition: { duration: 0.6, ease: "easeInOut" as const } }
     },
     engineering: {
       rest: { scale: 1, y: 0 },
-      hover: { scale: 1.1, y: -10, transition: { duration: 0.5, ease: "backOut" } }
+      hover: { scale: 1.1, y: -10, transition: { duration: 0.5, ease: "backOut" as const } }
     }
   };
 
@@ -122,7 +122,7 @@ export default function ServicesPage() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, staggerChildren: 0.15, ease: "easeOut" }
+      transition: { duration: 0.8, staggerChildren: 0.15, ease: "easeOut" as const }
     }
   };
 
@@ -174,7 +174,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreServices.map((service, index) => {
               const IconComponent = service.icon;
-              const currentIconVariants = iconVariants[service.key] || iconVariants.default;
+              const currentIconVariants = (iconVariants as any)[service.key] || iconVariants.default;
 
               return (
                 <motion.div

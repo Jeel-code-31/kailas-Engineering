@@ -163,7 +163,7 @@ export default function ProductsPage() {
                           transition={{
                             duration: 3 + j,
                             repeat: Infinity,
-                            ease: "easeInOut",
+                            ease: "easeInOut" as const,
                           }}
                         />
                       ))}

@@ -58,7 +58,7 @@ const WorkProcess = () => {
                             strokeDasharray="10,10"
                             initial={{ pathLength: 0, opacity: 0 }}
                             whileInView={{ pathLength: 1, opacity: 1 }}
-                            transition={{ duration: 5, ease: "linear" }}
+                            transition={{ duration: 5, ease: "linear" as const }}
                             viewport={{ once: true }}
                         />
                         {/* Arrows */}

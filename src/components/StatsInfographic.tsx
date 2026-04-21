@@ -71,7 +71,7 @@ const StatsInfographic = () => {
         hidden: { pathLength: 0 },
         visible: { 
             pathLength: 1, 
-            transition: { duration: 2, ease: "easeInOut" }
+            transition: { duration: 2, ease: "easeInOut" as const }
         }
     };
 

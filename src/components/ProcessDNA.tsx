@@ -64,7 +64,7 @@ const ProcessDNA = () => {
               {/* Perfectly Circular Marker */}
               <motion.div
                 animate={{ y: [0, -20, 0] }}
-                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: i * 0.7 }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" as const, delay: i * 0.7 }}
                 className={`relative w-48 h-48 lg:w-64 lg:h-64 ${step.color} border-4 ${step.borderColor} rounded-full flex items-center justify-center shadow-[0_30px_60px_rgba(0,0,0,0.1)] group cursor-default overflow-hidden`}
               >
                 <div className="text-center px-4 relative z-10">
@@ -97,7 +97,7 @@ const ProcessDNA = () => {
               opacity="0.3"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
-              transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 4, repeat: Infinity, ease: "linear" as const }}
             />
             {/* Strand 2 (Complementary) */}
             <motion.path

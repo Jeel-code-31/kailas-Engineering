@@ -48,7 +48,7 @@ export default function MediaDetailPage({ params }: { params: Promise<{ slug: st
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
   };
 
   // Fallback UI if the slug doesn't match anything
@@ -58,7 +58,7 @@ export default function MediaDetailPage({ params }: { params: Promise<{ slug: st
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" as const }}
           className="max-w-md w-full bg-white p-12 rounded-[2rem] shadow-2xl border border-neutral-100 flex flex-col items-center"
         >
           <div className="w-20 h-20 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mb-6">
@@ -106,13 +106,13 @@ export default function MediaDetailPage({ params }: { params: Promise<{ slug: st
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
           className="w-full aspect-video md:aspect-auto rounded-[1rem] overflow-hidden bg-neutral-100  mb-10 relative group"
         >
           <motion.img
             initial={{ scale: 1.05 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1.5, ease: "easeOut" as const }}
             src={data.src}
             alt={data.title}
             className="w-full h-full object-cover"
@@ -224,7 +224,7 @@ export default function MediaDetailPage({ params }: { params: Promise<{ slug: st
           scale: isHoveringGallery ? 1 : 0,
           opacity: isHoveringGallery ? 1 : 0
         }}
-        transition={{ duration: 0.15, ease: "easeOut" }}
+        transition={{ duration: 0.15, ease: "easeOut" as const }}
       >
         <div className="text-white font-black text-[10px] uppercase tracking-widest text-center leading-tight drop-shadow-md">
           View<br />

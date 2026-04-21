@@ -15,7 +15,7 @@ export default function ContactPage() {
                     <motion.div
                       initial={{ scale: 1.2 }}
                       animate={{ scale: 1 }}
-                      transition={{ duration: 10, ease: "linear" }}
+                      transition={{ duration: 10, ease: "linear" as const }}
                       className="relative w-full h-full"
                     >
                       <img
