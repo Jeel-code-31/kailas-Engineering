@@ -8,7 +8,7 @@ export default function CareersPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState("");
   const [fileName, setFileName] = useState("");
-  const [expandedJobIndex, setExpandedJobIndex] = useState(null);
+  const [expandedJobIndex, setExpandedJobIndex] = useState<number | null>(null);
 
   const benefits = [
     { title: "Skill Growth", desc: "Access to latest CNC/VMC technology and engineering software.", icon: <TrendingUp /> },
