@@ -140,6 +140,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-2 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 font-bold">
           <p>CopyRight © 2025 Kailas Engineering Systems.</p>
+          <p className="text-black">Developed by <a href="https://perfectpixel.co.in/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">perfectpixel</a></p>
         </div>
 
       </div>
